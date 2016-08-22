@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ascender</key>
+	<integer>1463</integer>
+	<key>capHeight</key>
+	<integer>1456</integer>
+	<key>copyright</key>
+	<string>Copyright (c) 2011 by vernon adams. All rights reserved.</string>
+	<key>descender</key>
+	<integer>-400</integer>
+	<key>familyName</key>
+	<string>Muli Bold</string>
+	<key>italicAngle</key>
+	<real>0.0</real>
+	<key>macintoshFONDName</key>
+	<string>Muli</string>
+	<key>note</key>
+	<string></string>
+	<key>openTypeHeadCreated</key>
+	<string>2012/04/18 22:53:36</string>
+	<key>openTypeNameCompatibleFullName</key>
+	<string>Muli Bold</string>
+	<key>openTypeNameDescription</key>
+	<string>Copyright (c) 2011 by vernon adams. All rights reserved.</string>
+	<key>openTypeNameDesigner</key>
+	<string>vernon adams</string>
+	<key>openTypeNameManufacturer</key>
+	<string>vernon adams</string>
+	<key>openTypeNamePreferredFamilyName</key>
+	<string>Muli</string>
+	<key>openTypeNamePreferredSubfamilyName</key>
+	<string>Bold</string>
+	<key>openTypeNameVersion</key>
+	<string>Version </string>
+	<key>openTypeOS2FamilyClass</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2Panose</key>
+	<array>
+		<integer>2</integer>
+		<integer>0</integer>
+		<integer>5</integer>
+		<integer>3</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>15</integer>
+		<integer>0</integer>
+		<integer>4</integer>
+	</array>
+	<key>openTypeOS2StrikeoutPosition</key>
+	<integer>512</integer>
+	<key>openTypeOS2StrikeoutSize</key>
+	<integer>102</integer>
+	<key>openTypeOS2SubscriptXOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SubscriptXSize</key>
+	<integer>6015</integer>
+	<key>openTypeOS2SubscriptYOffset</key>
+	<integer>1188</integer>
+	<key>openTypeOS2SubscriptYSize</key>
+	<integer>5583</integer>
+	<key>openTypeOS2SuperscriptXOffset</key>
+	<integer>0</integer>
+	<key>openTypeOS2SuperscriptXSize</key>
+	<integer>6015</integer>
+	<key>openTypeOS2SuperscriptYOffset</key>
+	<integer>4098</integer>
+	<key>openTypeOS2SuperscriptYSize</key>
+	<integer>5583</integer>
+	<key>openTypeOS2Type</key>
+	<array>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2TypoAscender</key>
+	<integer>1978</integer>
+	<key>openTypeOS2TypoDescender</key>
+	<integer>-679</integer>
+	<key>openTypeOS2TypoLineGap</key>
+	<integer>0</integer>
+	<key>openTypeOS2UnicodeRanges</key>
+	<array>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>31</integer>
+		<integer>32</integer>
+		<integer>33</integer>
+		<integer>35</integer>
+		<integer>38</integer>
+		<integer>45</integer>
+		<integer>60</integer>
+		<integer>62</integer>
+	</array>
+	<key>openTypeOS2VendorID</key>
+	<string>newt</string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>700</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>openTypeOS2WinAscent</key>
+	<integer>1978</integer>
+	<key>openTypeOS2WinDescent</key>
+	<integer>679</integer>
+	<key>postscriptBlueValues</key>
+	<array>
+	</array>
+	<key>postscriptFontName</key>
+	<string>Muli-Bold</string>
+	<key>postscriptFullName</key>
+	<string>Muli Bold</string>
+	<key>postscriptOtherBlues</key>
+	<array>
+	</array>
+	<key>postscriptUnderlinePosition</key>
+	<integer>-237</integer>
+	<key>postscriptUnderlineThickness</key>
+	<integer>119</integer>
+	<key>postscriptWeightName</key>
+	<string>Bold</string>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
+	<key>styleName</key>
+	<string>Bold</string>
+	<key>trademark</key>
+	<string>Muli Bold is a trademark of vernon adams.</string>
+	<key>unitsPerEm</key>
+	<integer>2048</integer>
+	<key>versionMajor</key>
+	<integer>1</integer>
+	<key>versionMinor</key>
+	<integer>1</integer>
+	<key>xHeight</key>
+	<integer>1026</integer>
+</dict>
+</plist>
