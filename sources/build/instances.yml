@@ -1,0 +1,17 @@
+masters:
+    ExtraLight:
+        value: 250
+        stem: 53
+    Regular:
+        value: 400
+        stem: 93
+    Heavy:
+        value: 900
+        stem: 141
+instances:
+    Light:
+        stem: 73
+    SemiBold:
+        stem: 112
+    Bold:
+        stem: 124
