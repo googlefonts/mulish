@@ -20,6 +20,10 @@ value = 0;
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = vendorID;
+value = NeWT;
 }
 );
 date = "2014-02-01 09:31:55 +0000";
@@ -44764,6 +44768,6 @@ type = characterSet;
 }
 );
 };
-versionMajor = 1;
+versionMajor = 3;
 versionMinor = 0;
 }
