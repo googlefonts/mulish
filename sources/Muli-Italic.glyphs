@@ -9,6 +9,7 @@ capHeight = 711;
 descender = -239;
 id = "A678A55B-4A26-4A39-BA40-1A26897903D3";
 weight = Light;
+weightValue = 250;
 xHeight = 503;
 },
 {
@@ -16,6 +17,7 @@ ascender = 726;
 capHeight = 711;
 descender = -209;
 id = "CAA31E91-2985-420A-82BA-6B4D8404D924";
+weightValue = 400;
 xHeight = 501;
 },
 {
@@ -24,6 +26,7 @@ capHeight = 711;
 descender = -193;
 id = "1FAC414F-D5EA-4BC8-A215-096CEB3A41C8";
 weight = Bold;
+weightValue = 800;
 xHeight = 501;
 }
 );
@@ -48636,6 +48639,49 @@ org.robofab.postScriptHintData = {
 }
 );
 disablesAutomaticAlignment = 1;
+instances = (
+{
+interpolationWeight = 250;
+instanceInterpolations = {
+"A678A55B-4A26-4A39-BA40-1A26897903D3" = 1;
+};
+name = ExtraLight;
+weightClass = ExtraLight;
+},
+{
+interpolationWeight = 323;
+instanceInterpolations = {
+"CAA31E91-2985-420A-82BA-6B4D8404D924" = 0.486667;
+"A678A55B-4A26-4A39-BA40-1A26897903D3" = 0.513333;
+};
+name = Light;
+weightClass = Light;
+},
+{
+interpolationWeight = 400;
+instanceInterpolations = {
+"CAA31E91-2985-420A-82BA-6B4D8404D924" = 1;
+};
+name = Regular;
+},
+{
+interpolationWeight = 642;
+instanceInterpolations = {
+"CAA31E91-2985-420A-82BA-6B4D8404D924" = 0.395;
+"1FAC414F-D5EA-4BC8-A215-096CEB3A41C8" = 0.605;
+};
+name = SemiBold;
+weightClass = SemiBold;
+},
+{
+interpolationWeight = 800;
+instanceInterpolations = {
+"1FAC414F-D5EA-4BC8-A215-096CEB3A41C8" = 1;
+};
+name = Bold;
+weightClass = Bold;
+}
+);
 kerning = {
 "A678A55B-4A26-4A39-BA40-1A26897903D3" = {
 V = {
