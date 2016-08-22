@@ -1,9 +1,6 @@
 {
 .appVersion = "911";
-DisplayStrings = (
-p
-);
-copyright = "Digitized data Copyright (c) 2011-2014, Vernon Adams.";
+copyright = "Copyright (c) 2014, The Muli Project Authors (vern@newtypography.co.uk)";
 customParameters = (
 {
 name = license;
