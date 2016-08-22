@@ -11,6 +11,6 @@ by Vernon Adams
 # Todo:
 - Improve README.md
 - Fix glyphs, anchors and components
-- Fix MM compatibility
+- Fix MM compatibility. Roman is worse than Italics
 - Run fonts through Font bakery and Ship fonts
 - Add TRADEMARKS.md
