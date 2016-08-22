@@ -1,5 +1,8 @@
 {
 .appVersion = "911";
+DisplayStrings = (
+p
+);
 customParameters = (
 {
 name = glyphOrder;
@@ -507,26 +510,26 @@ date = "2014-02-01 09:31:55 +0000";
 familyName = Muli;
 fontMaster = (
 {
-ascender = 714;
+ascender = 740;
 capHeight = 711;
-descender = -452;
+descender = -239;
 id = "CAA31E91-2985-420A-82BA-6B4D8404D924";
 weight = Light;
 weightValue = 250;
-xHeight = 501;
+xHeight = 503;
 },
 {
-ascender = 714;
+ascender = 725;
 capHeight = 711;
-descender = -293;
+descender = -205;
 id = "5F288B98-6DDA-4BF8-A62B-164790BC7EB2";
 weightValue = 400;
 xHeight = 501;
 },
 {
-ascender = 714;
+ascender = 705;
 capHeight = 711;
-descender = -195;
+descender = -187;
 id = "197E4CC0-43FA-49AB-8E7D-89E0185E23DB";
 weight = Bold;
 weightValue = 900;
