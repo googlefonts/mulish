@@ -36521,29 +36521,6 @@ org.robofab.postScriptHintData = {
 };
 },
 {
-glyphname = middot;
-lastChange = "2016-08-22 11:18:09 +0000";
-layers = (
-{
-layerId = "CAA31E91-2985-420A-82BA-6B4D8404D924";
-width = 293;
-},
-{
-layerId = "A678A55B-4A26-4A39-BA40-1A26897903D3";
-width = 293;
-},
-{
-layerId = "1FAC414F-D5EA-4BC8-A215-096CEB3A41C8";
-width = 293;
-}
-);
-unicode = 00B7;
-userData = {
-org.robofab.postScriptHintData = {
-};
-};
-},
-{
 glyphname = bullet;
 lastChange = "2016-08-22 12:06:28 +0000";
 layers = (
