@@ -5867,7 +5867,7 @@ unicode = 0139;
 },
 {
 glyphname = Lcaron;
-lastChange = "2016-08-22 09:22:14 +0000";
+lastChange = "2016-08-22 14:08:54 +0000";
 layers = (
 {
 components = (
@@ -5905,7 +5905,7 @@ width = 533;
 components = (
 {
 name = comma;
-transform = "{1, 0, 0, 1, 729, 2131}";
+transform = "{1, 0, 0, 1, 68, 919}";
 },
 {
 name = L;
@@ -16065,7 +16065,7 @@ width = 1222.5500;
 },
 {
 glyphname = dcaron;
-lastChange = "2016-08-22 09:22:14 +0000";
+lastChange = "2016-08-22 14:09:13 +0000";
 layers = (
 {
 components = (
@@ -16103,7 +16103,7 @@ width = 662;
 components = (
 {
 name = comma;
-transform = "{1, 0, 0, 1, 1310, 2102}";
+transform = "{1, 0, 0, 1, 692, 581}";
 },
 {
 name = d;
@@ -20565,7 +20565,7 @@ width = 519;
 },
 {
 glyphname = lcaron;
-lastChange = "2016-08-22 09:22:14 +0000";
+lastChange = "2016-08-22 14:09:30 +0000";
 layers = (
 {
 components = (
@@ -20603,7 +20603,7 @@ width = 253;
 components = (
 {
 name = comma;
-transform = "{1, 0, 0, 1, 785, 2102}";
+transform = "{1, 0, 0, 1, 266, 592}";
 },
 {
 name = l;
@@ -44662,6 +44662,40 @@ width = 600;
 disablesAutomaticAlignment = 1;
 instances = (
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 250;
 instanceInterpolations = {
 "CAA31E91-2985-420A-82BA-6B4D8404D924" = 1;
@@ -44670,6 +44704,40 @@ name = ExtraLight;
 weightClass = ExtraLight;
 },
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 325;
 instanceInterpolations = {
 "CAA31E91-2985-420A-82BA-6B4D8404D924" = 0.5;
@@ -44679,6 +44747,40 @@ name = Light;
 weightClass = Light;
 },
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 400;
 instanceInterpolations = {
 "5F288B98-6DDA-4BF8-A62B-164790BC7EB2" = 1;
@@ -44686,6 +44788,40 @@ instanceInterpolations = {
 name = Regular;
 },
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 597;
 instanceInterpolations = {
 "5F288B98-6DDA-4BF8-A62B-164790BC7EB2" = 0.606;
@@ -44695,15 +44831,84 @@ name = SemiBold;
 weightClass = SemiBold;
 },
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 722;
 instanceInterpolations = {
 "5F288B98-6DDA-4BF8-A62B-164790BC7EB2" = 0.356;
 "197E4CC0-43FA-49AB-8E7D-89E0185E23DB" = 0.644;
 };
+isBold = 1;
 name = Bold;
 weightClass = Bold;
 },
 {
+customParameters = (
+{
+name = winAscent;
+value = 1167;
+},
+{
+name = winDescent;
+value = 327;
+},
+{
+name = typoAscender;
+value = 1005;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1005;
+},
+{
+name = hheaDescender;
+value = -250;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 interpolationWeight = 900;
 instanceInterpolations = {
 "197E4CC0-43FA-49AB-8E7D-89E0185E23DB" = 1;
