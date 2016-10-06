@@ -1,5 +1,8 @@
 {
-.appVersion = "911";
+.appVersion = "922";
+DisplayStrings = (
+"OI/idotless n"
+);
 copyright = "Copyright (c) 2014, The Muli Project Authors (vern@newtypography.co.uk)";
 customParameters = (
 {
