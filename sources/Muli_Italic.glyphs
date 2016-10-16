@@ -82203,7 +82203,6 @@ instanceInterpolations = {
 "9E718F8A-2CEA-4931-B05D-987794BD97DA" = 0.737864;
 };
 isItalic = 1;
-linkStyle = Regular;
 name = Italic;
 },
 {
@@ -82237,7 +82236,6 @@ instanceInterpolations = {
 };
 isBold = 1;
 isItalic = 1;
-linkStyle = Bold;
 name = "Bold Italic";
 weightClass = Bold;
 },
