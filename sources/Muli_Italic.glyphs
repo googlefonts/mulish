@@ -1,5 +1,8 @@
 {
-.appVersion = "926";
+.appVersion = "976";
+DisplayStrings = (
+H
+);
 classes = (
 {
 automatic = 1;
@@ -8064,7 +8067,7 @@ unicode = 1E20;
 },
 {
 glyphname = H;
-lastChange = "2016-09-21 14:52:17 +0000";
+lastChange = "2017-02-16 12:30:12 +0000";
 layers = (
 {
 anchors = (
@@ -8157,8 +8160,8 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"629 337 LINE",
-"633 386 LINE",
+"649 337 LINE",
+"653 386 LINE",
 "140 386 LINE",
 "136 337 LINE"
 );
@@ -84214,5 +84217,5 @@ manufacturer = "Vernon Adams";
 manufacturerURL = "http://www.sansoxygen.com";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 0;
+versionMinor = 1;
 }
