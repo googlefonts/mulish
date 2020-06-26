@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.12">
+
+  <fvar>
+
+    <!-- Weight -->
+    <Axis>
+      <AxisTag>wght</AxisTag>
+      <Flags>0x0</Flags>
+      <MinValue>200.0</MinValue>
+      <DefaultValue>200.0</DefaultValue>
+      <MaxValue>1000.0</MaxValue>
+      <AxisNameID>256</AxisNameID>
+    </Axis>
+
+    <!-- ExtraLight -->
+    <NamedInstance flags="0x0" subfamilyNameID="257">
+      <coord axis="wght" value="200"/>
+    </NamedInstance>
+
+    <!-- Light -->
+    <NamedInstance flags="0x0" subfamilyNameID="258">
+      <coord axis="wght" value="300"/>
+    </NamedInstance>
+
+    <!-- Regular -->
+    <NamedInstance flags="0x0" subfamilyNameID="259">
+      <coord axis="wght" value="400"/>
+    </NamedInstance>
+
+    <!-- SemiBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="260">
+      <coord axis="wght" value="600"/>
+    </NamedInstance>
+
+    <!-- Bold -->
+    <NamedInstance flags="0x0" subfamilyNameID="261">
+      <coord axis="wght" value="700"/>
+    </NamedInstance>
+
+    <!-- ExtraBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="262">
+      <coord axis="wght" value="800"/>
+    </NamedInstance>
+
+    <!-- Black -->
+    <NamedInstance flags="0x0" subfamilyNameID="263">
+      <coord axis="wght" value="900"/>
+    </NamedInstance>
+  </fvar>
+
+</ttFont>

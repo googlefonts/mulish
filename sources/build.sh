@@ -1,48 +1,46 @@
 #!/bin/sh
 set -e
 
+TTFDIR=../fonts/ttf
+VFDIR=../fonts/vf
+mkdir -p $TTFDIR
+mkdir -p $VFDIR
 
 echo "Generating Static fonts"
-mkdir -p ../fonts
-fontmake -g Muli.glyphs -i -o ttf --output-dir ../fonts
-fontmake -g Muli_Italic.glyphs -i -o ttf --output-dir ../fonts
-
-echo "Generating VFs"
-fontmake -g Muli.glyphs -o variable --output-path ../fonts/Muli-Roman-VF.ttf
-fontmake -g Muli_Italic.glyphs -o variable --output-path ../fonts/Muli-Italic-VF.ttf
-
-rm -rf master_ufo/ instance_ufo/
-
+rm -r $TTFDIR/*.ttf
+fontmake -g Mulish.glyphs -i -o ttf --output-dir $TTFDIR -a
 
 echo "Post processing"
-ttfs=$(ls ../fonts/*.ttf)
+ttfs=$(ls $TTFDIR/*.ttf)
 for ttf in $ttfs
 do
 	gftools fix-dsig -f $ttf;
-	./ttfautohint-vf $ttf "$ttf.fix";
+	gftools fix-hinting $ttf;
 	mv "$ttf.fix" $ttf;
 done
 
+
+echo "Generating VFs"
+rm -r $VFDIR/*.ttf
+fontmake -g temp_no_slnt_axis/Mulish.glyphs -o variable --output-path "$VFDIR/Mulish[wght].ttf"
+fontmake -g temp_no_slnt_axis/Mulish_Italic.glyphs -o variable --output-path "$VFDIR/Mulish-Italic[wght].ttf"
+
 echo "Post processing VFs"
-vfs=$(ls ../fonts/*-VF.ttf)
-for vf in $vfs
+for f in $VFDIR/*.ttf
 do
-	gftools fix-dsig -f $vf;
-	./ttfautohint-vf --stem-width-mode nnn $vf "$vf.fix";
-	mv "$vf.fix" $vf;
+	echo Processing $f
+
+	# Apply manual fvar table
+	ttx -m $f Mulish_fvar.ttx
+	mv ./Mulish_fvar.ttf $f
+	# rm Mulish_fvar.ttf
+
+	gftools fix-dsig -f $f
+	ttfautohint $f $f.fix
+	mv $f.fix $f
+	gftools fix-unwanted-tables $f
+	gftools fix-hinting $f
+	mv $f.fix $f
 done
 
-
-echo "Fixing VF Meta"
-gftools fix-vf-meta $vfs;
-for vf in $vfs
-do
-	mv "$vf.fix" $vf;
-	ttx -f -x "MVAR" $vf; # Drop MVAR. Table has issue in DW
-	rtrip=$(basename -s .ttf $vf)
-	new_file=../fonts/$rtrip.ttx;
-	rm $vf;
-	ttx $new_file
-	rm $new_file
-done
-
+rm -rf master_ufo/ instance_ufo/
