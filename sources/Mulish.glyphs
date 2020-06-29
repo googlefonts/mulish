@@ -269315,10 +269315,6 @@ Axis = Slant;
 Location = "0";
 }
 );
-},
-{
-name = weightClass;
-value = 275;
 }
 );
 interpolationCustom1 = 13;
@@ -269536,10 +269532,6 @@ Axis = Slant;
 Location = "9";
 }
 );
-},
-{
-name = weightClass;
-value = 275;
 }
 );
 interpolationCustom = 9;
