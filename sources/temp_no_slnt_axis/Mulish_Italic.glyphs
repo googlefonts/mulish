@@ -452,7 +452,7 @@ value = 1065;
 },
 {
 name = winDescent;
-value = 297;
+value = 300;
 },
 {
 name = hheaAscender;
@@ -539,7 +539,7 @@ value = 1065;
 },
 {
 name = winDescent;
-value = 297;
+value = 300;
 },
 {
 name = hheaAscender;
@@ -625,7 +625,7 @@ value = 1065;
 },
 {
 name = winDescent;
-value = 297;
+value = 300;
 },
 {
 name = hheaAscender;
