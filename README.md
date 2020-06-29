@@ -1,8 +1,8 @@
-# Muli
+# Mulish
 by Vernon Adams
 
 # Completed tasks:
-- Updated version number to V3.000
+- Updated version number to V3.600
 - Added vertical metrics
 - Ran tidied up paths
 - Tidied up master compatilibity. Still needs further work

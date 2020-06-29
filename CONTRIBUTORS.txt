@@ -11,3 +11,4 @@
 
 Vernon Adams <vern@newtypography.co.uk>
 Marc Foley <m.foley.88@gmail.com>
+Yanone <post@yanone.de>
