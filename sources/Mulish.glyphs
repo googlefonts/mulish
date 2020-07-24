@@ -1,5 +1,5 @@
 {
-.appVersion = "1286";
+.appVersion = "1342";
 classes = (
 {
 automatic = 1;
@@ -68,7 +68,7 @@ name = "Use Line Breaks";
 value = 1;
 }
 );
-date = "2020-06-26 13:13:30 +0000";
+date = "2020-07-24 12:09:08 +0000";
 designer = "Vernon Adams";
 designerURL = "http://www.sansoxygen.com";
 disablesNiceNames = 1;
@@ -285064,5 +285064,5 @@ zerowidthspace
 };
 };
 versionMajor = 3;
-versionMinor = 600;
+versionMinor = 601;
 }

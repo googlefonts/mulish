@@ -1,5 +1,5 @@
 {
-.appVersion = "1286";
+.appVersion = "1342";
 classes = (
 {
 automatic = 1;
@@ -68,7 +68,7 @@ name = "Variable Font Origin";
 value = "2567DF27-EA2D-46C8-A1A0-FA57AF1B0F16";
 }
 );
-date = "2020-06-26 12:28:39 +0000";
+date = "2020-07-24 12:09:44 +0000";
 designer = "Vernon Adams";
 designerURL = "http://www.sansoxygen.com";
 disablesNiceNames = 1;
@@ -152940,5 +152940,5 @@ zerowidthspace
 };
 };
 versionMajor = 3;
-versionMinor = 600;
+versionMinor = 601;
 }
