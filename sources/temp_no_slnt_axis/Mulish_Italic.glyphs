@@ -68,7 +68,7 @@ name = "Variable Font Origin";
 value = "C98CF2FB-27AB-48B2-98BD-5B202BDF0FA3";
 }
 );
-date = "2020-07-24 12:09:52 +0000";
+date = "2020-07-30 12:28:54 +0000";
 designer = "Vernon Adams";
 designerURL = "http://www.sansoxygen.com";
 disablesNiceNames = 1;
@@ -150982,5 +150982,5 @@ zerowidthspace
 };
 };
 versionMajor = 3;
-versionMinor = 601;
+versionMinor = 602;
 }

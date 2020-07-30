@@ -1,5 +1,8 @@
 {
 .appVersion = "1342";
+DisplayStrings = (
+"/perthousand"
+);
 classes = (
 {
 automatic = 1;
@@ -68,7 +71,7 @@ name = "Variable Font Origin";
 value = "2567DF27-EA2D-46C8-A1A0-FA57AF1B0F16";
 }
 );
-date = "2020-07-24 12:09:44 +0000";
+date = "2020-07-30 12:28:12 +0000";
 designer = "Vernon Adams";
 designerURL = "http://www.sansoxygen.com";
 disablesNiceNames = 1;
@@ -116254,10 +116257,10 @@ nodes = (
 {
 closed = 1;
 nodes = (
+"273 0 LINE",
 "695 705 LINE",
 "653 705 LINE",
-"231 0 LINE",
-"273 0 LINE"
+"231 0 LINE"
 );
 },
 {
@@ -116531,10 +116534,10 @@ nodes = (
 {
 closed = 1;
 nodes = (
-"532 353 LINE",
-"716 705 LINE",
-"419 353 LINE",
-"235 0 LINE"
+"321 0 LINE",
+"737 705 LINE",
+"630 705 LINE",
+"214 0 LINE"
 );
 },
 {
@@ -152940,5 +152943,5 @@ zerowidthspace
 };
 };
 versionMajor = 3;
-versionMinor = 601;
+versionMinor = 602;
 }
