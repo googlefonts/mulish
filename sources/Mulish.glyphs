@@ -269503,10 +269503,6 @@ Axis = Slant;
 Location = "0";
 }
 );
-},
-{
-name = familyName;
-value = "Mulish Heavy";
 }
 );
 interpolationCustom1 = 13;
@@ -269515,7 +269511,8 @@ interpolationWidth = 0;
 instanceInterpolations = {
 "FFBF88B9-CE65-4AF8-A771-12A489880E49" = 1;
 };
-name = Regular;
+name = Heavy;
+weightClass = Heavy;
 },
 {
 customParameters = (
@@ -269738,10 +269735,6 @@ Axis = Slant;
 Location = "9";
 }
 );
-},
-{
-name = familyName;
-value = "Mulish Heavy";
 }
 );
 interpolationCustom = 9;
@@ -269753,7 +269746,8 @@ instanceInterpolations = {
 };
 isItalic = 1;
 linkStyle = Heavy;
-name = Italic;
+name = "Heavy Italic";
+weightClass = Heavy;
 }
 );
 kerning = {
