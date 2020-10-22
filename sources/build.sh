@@ -2,40 +2,50 @@
 set -e
 
 
-echo "Generating Static fonts"
-TTFDIR=../fonts/ttf
-mkdir -p $TTFDIR
-rm -rf $TTFDIR/*.ttf
-fontmake -g Mulish.glyphs -i -o ttf --output-dir $TTFDIR -a
+# echo "Generating Static fonts"
+# TTFDIR=../fonts/ttf
+# mkdir -p $TTFDIR
+# rm -rf $TTFDIR/*.ttf
+# fontmake -g Mulish.glyphs -i -o ttf --output-dir $TTFDIR -a
+# # Heavy fonts (weightClass 1000) currently not allowed
+# rm $TTFDIR/*Heavy*.ttf
 
-echo "Post processing"
-ttfs=$(ls $TTFDIR/*.ttf)
-for ttf in $ttfs
-do
-	gftools fix-dsig -f $ttf;
-	ttfautohint $ttf $ttf.fix
-	mv "$ttf.fix" $ttf;
-	gftools fix-hinting $ttf;
-	mv "$ttf.fix" $ttf;
-done
+# echo "Post processing"
+# ttfs=$(ls $TTFDIR/*.ttf)
+# for ttf in $ttfs
+# do
+# 	gftools fix-dsig -f $ttf;
+# 	ttfautohint $ttf $ttf.fix
+# 	mv "$ttf.fix" $ttf;
+# 	gftools fix-hinting $ttf;
+# 	mv "$ttf.fix" $ttf;
+# done
 
 
 echo "Generating VFs"
 VFDIR=../fonts/vf
 mkdir -p $VFDIR
 rm -rf $VFDIR/*.ttf
-fontmake -g temp_no_slnt_axis/Mulish.glyphs -o variable --output-path "$VFDIR/Mulish[wght].ttf"
-fontmake -g temp_no_slnt_axis/Mulish_Italic.glyphs -o variable --output-path "$VFDIR/Mulish-Italic[wght].ttf"
+VF_FILE="$VFDIR/Mulish[ital,wght].ttf"
+fontmake -g Mulish.glyphs -o variable --output-path "$VFDIR/Mulish[ital,wght].ttf"
+
+# Build STAT table
+python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
+
+# Restrict weights to the currently allowed range (exclude Heavy), and split ital axis.
+# As of this writing, Marc's PR to fonttools to adjust name tables for the Italic split 
+# wasn't merged yet; so installed it directly: 
+# pip install git+https://github.com/m4rc1e/fonttools.git@instancer-name
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 -o "$VFDIR/Mulish[wght].ttf"
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 -o "$VFDIR/Mulish-Italic[wght].ttf"
+
+# Delete original upright+italic file
+# rm "$VFDIR/Mulish[ital,wght].ttf"
 
 echo "Post processing VFs"
 for f in $VFDIR/*.ttf
 do
 	echo Processing $f
-
-	# Apply manual fvar table
-	ttx -m $f Mulish_fvar.ttx
-	mv ./Mulish_fvar.ttf $f
-
 	gftools fix-dsig -f $f
 	gftools fix-unwanted-tables $f
 	gftools fix-nonhinting $f $f.fix
