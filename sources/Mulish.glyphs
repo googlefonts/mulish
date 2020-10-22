@@ -46,8 +46,8 @@ Name = Weight;
 Tag = wght;
 },
 {
-Name = Slant;
-Tag = slnt;
+Name = Italic;
+Tag = ital;
 }
 );
 },
