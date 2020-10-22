@@ -269974,8 +269974,8 @@ Axis = Weight;
 Location = "200";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270002,8 +270002,8 @@ Axis = Weight;
 Location = "300";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270031,8 +270031,8 @@ Axis = Weight;
 Location = "400";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270058,8 +270058,8 @@ Axis = Weight;
 Location = "600";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270091,8 +270091,8 @@ Axis = Weight;
 Location = "700";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270119,8 +270119,8 @@ Axis = Weight;
 Location = "800";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270148,8 +270148,8 @@ Axis = Weight;
 Location = "900";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 }
@@ -270181,8 +270181,8 @@ Axis = Weight;
 Location = "1000";
 },
 {
-Axis = Slant;
-Location = "9";
+Axis = Italic;
+Location = 1;
 }
 );
 },
