@@ -17,14 +17,14 @@ AXES = [
             dict(nominalValue=900, rangeMinValue=850, rangeMaxValue=900, name="Black"),
         ],
     ),
-    dict(
-        tag="ital",
-        name="Italic",
-        values=[
-            dict(nominalValue=0, rangeMinValue=0, rangeMaxValue=0, name="Roman", flags=0x2),
-            dict(nominalValue=1, rangeMinValue=0.1, rangeMaxValue=1, name="Italic"),
-        ],
-    ),
+#     dict(
+#         tag="ital",
+#         name="Italic",
+#         values=[
+#             dict(nominalValue=0, rangeMinValue=0, rangeMaxValue=0, name="Roman"),
+# #            dict(nominalValue=1, rangeMinValue=0.1, rangeMaxValue=1, name="Italic"),
+#         ],
+#     ),
 ]
 
 def update_fvar(ttfont):

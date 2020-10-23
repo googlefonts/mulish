@@ -26,21 +26,29 @@ echo "Generating VFs"
 VFDIR=../fonts/vf
 mkdir -p $VFDIR
 rm -rf $VFDIR/*.ttf
-VF_FILE="$VFDIR/Mulish[ital,wght].ttf"
 fontmake -g Mulish.glyphs -o variable --output-path "$VFDIR/Mulish[ital,wght].ttf"
 
 # Build STAT table
 python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
 
+# -- Splitting, start --
+# Everything under here (until --end--) can be removed once ital axis is allowed in GF specs.
+# The complete VF gets split into separate Roman and Italic fonts.
+
 # Restrict weights to the currently allowed range (exclude Heavy), and split ital axis.
 # As of this writing, Marc's PR to fonttools to adjust name tables for the Italic split 
 # wasn't merged yet; so installed it directly: 
-# pip install git+https://github.com/m4rc1e/fonttools.git@instancer-name
-fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 -o "$VFDIR/Mulish[wght].ttf"
+# pip install -U git+https://github.com/m4rc1e/fonttools.git@instancer-name
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 --update-nametable -o "$VFDIR/Mulish[wght].ttf"
 fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 --update-nametable -o "$VFDIR/Mulish-Italic[wght].ttf"
 
+# Build STAT table again for Roman:
+# python gen_stat_roman.py "$VFDIR/Mulish[wght].ttf"
+
 # Delete original upright+italic file
-# rm "$VFDIR/Mulish[ital,wght].ttf"
+rm "$VFDIR/Mulish[ital,wght].ttf"
+
+# -- Splitting, end --
 
 echo "Post processing VFs"
 for f in $VFDIR/*.ttf
