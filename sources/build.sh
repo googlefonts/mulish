@@ -43,7 +43,7 @@ fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 --
 fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 --update-nametable -o "$VFDIR/Mulish-Italic[wght].ttf"
 
 # Build STAT table again for Roman:
-# python gen_stat_roman.py "$VFDIR/Mulish[wght].ttf"
+python gen_stat_roman.py "$VFDIR/Mulish[wght].ttf"
 
 # Delete original upright+italic file
 rm "$VFDIR/Mulish[ital,wght].ttf"
