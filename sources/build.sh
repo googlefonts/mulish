@@ -26,7 +26,7 @@ echo "Generating VFs"
 VFDIR=../fonts/vf
 mkdir -p $VFDIR
 rm -rf $VFDIR/*.ttf
-fontmake -g Mulish.glyphs -o variable --output-path "$VFDIR/Mulish[ital,wght].ttf"
+fontmake -g Mulish.glyphs -o variable --flatten-components --output-path "$VFDIR/Mulish[ital,wght].ttf"
 
 # Build STAT table
 python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
