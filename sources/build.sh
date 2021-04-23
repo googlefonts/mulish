@@ -38,6 +38,7 @@ python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
 # Restrict weights to the currently allowed range (exclude Heavy), and split ital axis.
 fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 --update-name-table -o "$VFDIR/Mulish[wght].ttf"
 fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 --update-name-table -o "$VFDIR/Mulish-Italic[wght].ttf"
+python set_italic.py "$VFDIR/Mulish-Italic[wght].ttf"
 
 # Delete original upright+italic file
 rm "$VFDIR/Mulish[ital,wght].ttf"
