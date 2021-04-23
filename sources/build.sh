@@ -2,47 +2,59 @@
 set -e
 
 
-echo "Generating Static fonts"
-mkdir -p ../fonts
-fontmake -g Muli.glyphs -i -o ttf --output-dir ../fonts
-fontmake -g Muli_Italic.glyphs -i -o ttf --output-dir ../fonts
+# echo "Generating Static fonts"
+# TTFDIR=../fonts/ttf
+# mkdir -p $TTFDIR
+# rm -rf $TTFDIR/*.ttf
+# fontmake -g Mulish.glyphs -i -o ttf --output-dir $TTFDIR -a
+# # Heavy fonts (weightClass 1000) currently not allowed
+# rm $TTFDIR/*Heavy*.ttf
+
+# echo "Post processing"
+# ttfs=$(ls $TTFDIR/*.ttf)
+# for ttf in $ttfs
+# do
+# 	gftools fix-dsig -f $ttf;
+# 	ttfautohint $ttf $ttf.fix
+# 	mv "$ttf.fix" $ttf;
+# 	gftools fix-hinting $ttf;
+# 	mv "$ttf.fix" $ttf;
+# done
+
 
 echo "Generating VFs"
-fontmake -g Muli.glyphs -o variable --output-path ../fonts/Muli-Roman-VF.ttf
-fontmake -g Muli_Italic.glyphs -o variable --output-path ../fonts/Muli-Italic-VF.ttf
+VFDIR=../fonts/vf
+mkdir -p $VFDIR
+rm -rf $VFDIR/*.ttf
+fontmake -g Mulish.glyphs -o variable --flatten-components --output-path "$VFDIR/Mulish[ital,wght].ttf"
 
-rm -rf master_ufo/ instance_ufo/
+# Build STAT table
+python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
 
+# -- Splitting, start --
+# Everything under here (until --end--) can be removed once ital axis is allowed in GF specs.
+# The complete VF gets split into separate Roman and Italic fonts.
 
-echo "Post processing"
-ttfs=$(ls ../fonts/*.ttf)
-for ttf in $ttfs
-do
-	gftools fix-dsig -f $ttf;
-	./ttfautohint-vf $ttf "$ttf.fix";
-	mv "$ttf.fix" $ttf;
-done
+# Restrict weights to the currently allowed range (exclude Heavy), and split ital axis.
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 --update-name-table -o "$VFDIR/Mulish[wght].ttf"
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 --update-name-table -o "$VFDIR/Mulish-Italic[wght].ttf"
+python set_italic.py "$VFDIR/Mulish-Italic[wght].ttf"
+
+# Delete original upright+italic file
+rm "$VFDIR/Mulish[ital,wght].ttf"
+
+# -- Splitting, end --
 
 echo "Post processing VFs"
-vfs=$(ls ../fonts/*-VF.ttf)
-for vf in $vfs
+for f in $VFDIR/*.ttf
 do
-	gftools fix-dsig -f $vf;
-	./ttfautohint-vf --stem-width-mode nnn $vf "$vf.fix";
-	mv "$vf.fix" $vf;
+	echo Processing $f
+	gftools fix-dsig -f $f
+	gftools fix-unwanted-tables $f
+	gftools fix-nonhinting $f $f.fix
+	mv $f.fix $f
 done
 
-
-echo "Fixing VF Meta"
-gftools fix-vf-meta $vfs;
-for vf in $vfs
-do
-	mv "$vf.fix" $vf;
-	ttx -f -x "MVAR" $vf; # Drop MVAR. Table has issue in DW
-	rtrip=$(basename -s .ttf $vf)
-	new_file=../fonts/$rtrip.ttx;
-	rm $vf;
-	ttx $new_file
-	rm $new_file
-done
-
+# Clean up
+rm -rf $VFDIR/*backup*.ttf
+rm -rf master_ufo/ instance_ufo/
