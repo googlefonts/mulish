@@ -36,8 +36,8 @@ python gen_stat.py "$VFDIR/Mulish[ital,wght].ttf"
 # The complete VF gets split into separate Roman and Italic fonts.
 
 # Restrict weights to the currently allowed range (exclude Heavy), and split ital axis.
-fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:900 --update-name-table -o "$VFDIR/Mulish[wght].ttf"
-fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:900 --update-name-table -o "$VFDIR/Mulish-Italic[wght].ttf"
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=0 wght=200:1000 --update-name-table -o "$VFDIR/Mulish[wght].ttf"
+fonttools varLib.instancer "$VFDIR/Mulish[ital,wght].ttf" ital=1 wght=200:1000 --update-name-table -o "$VFDIR/Mulish-Italic[wght].ttf"
 python set_italic.py "$VFDIR/Mulish-Italic[wght].ttf"
 
 # Delete original upright+italic file
