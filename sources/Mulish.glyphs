@@ -1,5 +1,5 @@
 {
-.appVersion = "1342";
+.appVersion = "1352";
 DisplayStrings = (
 "O/slashlongcomb.case Ø"
 );
@@ -269853,10 +269853,6 @@ weightClass = SemiBold;
 {
 customParameters = (
 {
-name = weightClass;
-value = 700;
-},
-{
 name = "Axis Location";
 value = (
 {
@@ -269935,10 +269931,6 @@ weightClass = Black;
 {
 customParameters = (
 {
-name = weightClass;
-value = 1000;
-},
-{
 name = "Axis Location";
 value = (
 {
@@ -269952,8 +269944,8 @@ Location = 0;
 );
 },
 {
-name = familyName;
-value = "Mulish Heavy";
+name = weightClass;
+value = 1000;
 }
 );
 interpolationCustom1 = 13;
@@ -269962,7 +269954,8 @@ interpolationWidth = 0;
 instanceInterpolations = {
 "FFBF88B9-CE65-4AF8-A771-12A489880E49" = 1;
 };
-name = Regular;
+name = ExtraBlack;
+weightClass = Heavy;
 },
 {
 customParameters = (
@@ -270080,10 +270073,6 @@ weightClass = SemiBold;
 {
 customParameters = (
 {
-name = weightClass;
-value = 700;
-},
-{
 name = "Axis Location";
 value = (
 {
@@ -270170,10 +270159,6 @@ weightClass = Black;
 {
 customParameters = (
 {
-name = weightClass;
-value = 1000;
-},
-{
 name = "Axis Location";
 value = (
 {
@@ -270187,8 +270172,8 @@ Location = 1;
 );
 },
 {
-name = familyName;
-value = "Mulish Heavy";
+name = weightClass;
+value = 1000;
 }
 );
 interpolationCustom = 9;
@@ -270199,8 +270184,9 @@ instanceInterpolations = {
 "BFD2D546-DAD9-41DE-8B9F-F3E812C082B3" = 1;
 };
 isItalic = 1;
-linkStyle = Heavy;
-name = Italic;
+linkStyle = ExtraBlack;
+name = "ExtraBlack Italic";
+weightClass = Heavy;
 }
 );
 kerning = {
