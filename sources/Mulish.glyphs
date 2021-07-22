@@ -1,8 +1,5 @@
 {
-.appVersion = "1352";
-DisplayStrings = (
-"O/slashlongcomb.case Ø"
-);
+.appVersion = "1349";
 classes = (
 {
 automatic = 1;
@@ -285497,5 +285494,5 @@ zerowidthspace
 };
 };
 versionMajor = 3;
-versionMinor = 602;
+versionMinor = 603;
 }
