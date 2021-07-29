@@ -21,8 +21,8 @@ AXES = [
         tag="ital",
         name="Italic",
         values=[
-            dict(nominalValue=0, rangeMinValue=0, rangeMaxValue=0, name="Roman", flags=0x2),
-            dict(nominalValue=1, rangeMinValue=0.1, rangeMaxValue=1, name="Italic"),
+            dict(value=0, name="Roman", flags=0x2, linkedValue=1),
+            dict(value=1, name="Italic"),
         ],
     ),
 ]
