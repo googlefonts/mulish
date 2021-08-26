@@ -1,5 +1,5 @@
 {
-.appVersion = "1342";
+.appVersion = "1349";
 classes = (
 {
 automatic = 1;
@@ -420,7 +420,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = "M0 Slant";
+custom = Extra;
 customParameters = (
 {
 name = typoAscender;
@@ -476,12 +476,14 @@ horizontalStems = (
 );
 id = "C98CF2FB-27AB-48B2-98BD-5B202BDF0FA3";
 italicAngle = 9;
+name = ExtraLight;
 verticalStems = (
 42,
 45,
 42,
 43
 );
+weight = Light;
 weightValue = 42;
 widthValue = 9;
 xHeight = 500;
@@ -496,7 +498,6 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = "M500 Slant";
 customParameters = (
 {
 name = typoAscender;
@@ -573,7 +574,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = "M1000 Slant";
+custom = ExtraBlack;
 customParameters = (
 {
 name = typoAscender;
