@@ -1,5 +1,5 @@
 {
-.appVersion = "1349";
+.appVersion = "1342";
 classes = (
 {
 automatic = 1;
@@ -54,6 +54,10 @@ value = 1;
 {
 name = "Use Line Breaks";
 value = 1;
+},
+{
+name = "Variable Font Origin";
+value = "C98CF2FB-27AB-48B2-98BD-5B202BDF0FA3";
 }
 );
 date = "2020-07-30 11:15:21 +0000";
@@ -420,7 +424,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = Extra;
+custom = "Extra Italic";
 customParameters = (
 {
 name = typoAscender;
@@ -476,7 +480,7 @@ horizontalStems = (
 );
 id = "C98CF2FB-27AB-48B2-98BD-5B202BDF0FA3";
 italicAngle = 9;
-name = ExtraLight;
+name = "ExtraLight Italic";
 verticalStems = (
 42,
 45,
@@ -498,6 +502,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
+custom = Italic;
 customParameters = (
 {
 name = typoAscender;
@@ -551,7 +556,6 @@ horizontalStems = (
 99,
 96
 );
-iconName = Bold;
 id = "AFEE2FCF-314D-4571-9AD7-6410332F14FF";
 italicAngle = 9;
 verticalStems = (
@@ -560,6 +564,7 @@ verticalStems = (
 125,
 126
 );
+weight = Bold;
 weightValue = 125;
 widthValue = 9;
 xHeight = 505;
@@ -574,7 +579,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = ExtraBlack;
+custom = "ExtraBlack Italic";
 customParameters = (
 {
 name = typoAscender;

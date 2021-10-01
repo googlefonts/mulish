@@ -54,6 +54,10 @@ value = 1;
 {
 name = "Use Line Breaks";
 value = 1;
+},
+{
+name = "Variable Font Origin";
+value = "2567DF27-EA2D-46C8-A1A0-FA57AF1B0F16";
 }
 );
 date = "2020-07-30 11:15:21 +0000";
@@ -502,7 +506,6 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = M500;
 customParameters = (
 {
 name = typoAscender;
@@ -560,7 +563,6 @@ horizontalStems = (
 99,
 96
 );
-iconName = Bold;
 id = "36495FFF-A792-4E19-9295-2592132C4E2F";
 verticalStems = (
 128,
@@ -568,6 +570,7 @@ verticalStems = (
 125,
 126
 );
+weight = Bold;
 weightValue = 125;
 widthValue = 0;
 xHeight = 505;
@@ -582,7 +585,7 @@ alignmentZones = (
 );
 ascender = 736;
 capHeight = 705;
-custom = M1000;
+custom = Black;
 customParameters = (
 {
 name = typoAscender;
