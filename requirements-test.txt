@@ -380,7 +380,7 @@ toml==0.10.2
     # via
     #   fontbakery
     #   nanoemoji
-tqdm==4.66.2
+tqdm==4.66.3
     # via
     #   afdko
     #   collidoscope
