@@ -79,7 +79,7 @@ commandlines==0.4.1
     # via ufolint
 compreffor==0.5.5
     # via ufo2ft
-cryptography==42.0.5
+cryptography==43.0.1
     # via pyjwt
 defcon[lxml,pens]==0.10.3
     # via
