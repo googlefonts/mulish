@@ -204,7 +204,7 @@ glyphslib==6.7.1
     #   fontmake
     #   gftools
     #   glyphsets
-h11==0.14.0
+h11==0.16.0
     # via wsproto
 hyperglot==0.6.2
     # via gftools
