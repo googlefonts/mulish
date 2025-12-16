@@ -97,7 +97,7 @@ diffenator2==0.3.8
     # via gftools
 docopt==0.6.2
     # via num2words
-filelock==3.14.0
+filelock==3.20.1
     # via youseedee
 font-v==2.1.0
     # via gftools
