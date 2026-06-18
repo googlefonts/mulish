@@ -61,7 +61,7 @@ certifi==2024.2.2
     # via
     #   requests
     #   selenium
-cffi==1.16.0
+cffi==2.0.0
     # via
     #   cmarkgfm
     #   cryptography
@@ -83,7 +83,7 @@ commandlines==0.4.1
     # via ufolint
 compreffor==0.5.5
     # via ufo2ft
-cryptography==42.0.5
+cryptography==48.0.1
     # via pyjwt
 defcon[lxml,pens]==0.10.3
     # via
